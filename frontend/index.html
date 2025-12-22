@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to DevOps with Azure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(
+                120deg,
+                #0078D4,
+                #00B4D8,
+                #6A5ACD,
+                #20C997,
+                #6610F2
+            );
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.35);
+            padding: 50px 60px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            max-width: 700px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #00E5FF;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .badge {
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .badge:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to <span>DevOps</span> with <span>Azure</span></h1>
+        <p>
+            Automating • Building • Deploying • Scaling  
+            <br>
+            Powered by Cloud & DevOps Culture
+        </p>
+
+        <div class="badges">
+            <div class="badge">Linux</div>
+            <div class="badge">Git & GitHub</div>
+            <div class="badge">Docker</div>
+            <div class="badge">Kubernetes</div>
+            <div class="badge">Azure Cloud</div>
+            <div class="badge">CI/CD</div>
+        </div>
+
+        <footer>
+            🚀 Designed for DevOps & Cloud Deployments
+        </footer>
+    </div>
+
+</body>
+</html>
