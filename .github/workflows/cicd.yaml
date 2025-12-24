@@ -59,4 +59,4 @@ jobs:
     # 9️⃣ Deploy Monitoring (Prometheus + Grafana)
     - name: Deploy Monitoring Stack
       run: |
-        kubectl apply -f monitoring/
+        kubectl apply -f monitoring/  
