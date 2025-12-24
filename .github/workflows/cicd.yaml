@@ -39,6 +39,8 @@ jobs:
         docker build -t frontend ./frontend
         docker tag frontend:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/frontend-app:latest
         docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/frontend-app:latest
+         
+        aws sts get-caller-identity
 
     # 6️⃣ Setup kubectl
     - name: Setup kubectl
